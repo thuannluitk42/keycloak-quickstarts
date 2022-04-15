@@ -39,7 +39,8 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
         
-        private @Autowired HttpServletRequest request;
+	@Autowired
+        private HttpServletRequest request;
 
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String handleCustomersRequest(Principal principal, Model model) {
